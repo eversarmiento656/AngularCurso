@@ -1,0 +1,27 @@
+<h4>Utilizar jquery en angluar</h4>
+<button id="botonjq" >Mostrar texto</button>
+<p id="textojq" class="alert alert-warning">
+    Pero ¿de verdad es así? La respuesta tiene que ser negativa. La política no se hace en las urnas. El sistema de partido hegemónico que impera en México desde 1929 determina que la verdadera elección de diputados haya ocurrido en febrero, probablemente cuando los diversos intereses que es aglutinan en el PRI acordaron las candidaturas, en un proceso que sólo es formalmente interior, pero que por la naturaleza del partido es el que verdaderamente decide la composición de la Cámara.
+</p>
+
+<div id= "caja" style="border: 1px solid black; width: 500px; height: 50px;">
+    Pero ¿de verdad es así? La respuesta tiene que ser negativa. La política no se hace en las urnas. El sistema de partido hegemónico que impera en México desde 1929 determina que la verdadera elección de diputados haya ocurrido en febrero, probablemente cuando los diversos intereses que es aglutinan en el PRI acordaron las candidaturas, en un proceso que sólo es formalmente interior, pero que por la naturaleza del partido es el que verdaderamente decide la composición de la Cámara.
+</div>
+
+<hr>
+padre:
+<h1>{{titulo}}</h1>
+<ul>
+    <li>Camiseta roja</li>
+    <li>Zapatos Negros</li>
+</ul>
+<hr>
+hijo:
+<p>
+Nombre del parque <input type="text" [(ngModel)] = "nombreParque"/>
+Nombre del parque <input type="number" [(ngModel)] = "metrosParque"/>
+</p>
+<hr>
+<p *ngIf = "nombreParque && metrosParque">
+    <parque [nombre] = "nombreParque"  [metros] = "metrosParque" (pasarDatos) = "verDatosParque($event)"></parque>
+</p>
