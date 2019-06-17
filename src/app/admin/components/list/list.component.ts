@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class ListComponent {
 
   public title = 'Lista';
-  constructor() { }
-
+  public number = new Array(10);
 
 }

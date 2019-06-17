@@ -8,20 +8,20 @@ import { Component, OnInit, DoCheck } from '@angular/core';
 export class MostrarEmailComponent implements OnInit, DoCheck {
 
   public title = 'Mostrar email';
-  public emailContacto : string;
+  public emailContacto: string;
 
 
   constructor() { }
 
-  ngOnInit(){
+  ngOnInit() {
     this.emailContacto = localStorage.getItem('emailContacto');
   }
 
-  ngDoCheck(){
+  ngDoCheck() {
     this.emailContacto = localStorage.getItem('emailContacto');
   }
 
-  borrarEmail(){
+  borrarEmail() {
     localStorage.removeItem('emailContacto');
     localStorage.clear();
     this.emailContacto = null;
