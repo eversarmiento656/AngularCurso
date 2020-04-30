@@ -24,7 +24,7 @@
     "@types/jquery": "^3.3.29",
     "bootstrap": "3.3.6",
     "core-js": "^2.6.8",
-    "jquery": "1.12",
+    "jquery": "3.5",
     "jquery-dotdotdot": "1.8.2",
     "rxjs": "~6.2.0",
     "tinymce": "^5.0.6",
